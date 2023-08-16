@@ -34,7 +34,7 @@
         android:id="@+id/restaurant_signup2_profile_img"
         android:layout_width="320dp"
         android:layout_height="150dp"
-        android:scaleType="centerCrop"
+        android:src="@drawable/image"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,7 +46,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        style="@style/eidttext2"
+        style="@style/eidttext"
         android:drawableStart="@drawable/icon_phone"
         android:drawablePadding="10dp"
         android:hint="MobileNumber"
@@ -60,21 +60,12 @@
         android:layout_marginEnd="10dp"
         android:layout_marginStart="10dp"/>
 
-    <ProgressBar android:id="@+id/restaurant_signUp2_pro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
     <EditText
         android:id="@+id/restaurant_signUp2_et_deliveryFee"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
-        style="@style/eidttext2"
+        style="@style/eidttext"
         android:drawableStart="@drawable/icon_shipped"
         android:drawablePadding="10dp"
         android:hint="DeliveryFee"
@@ -93,7 +84,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginTop="25dp"
-        style="@style/eidttext2"
+        style="@style/eidttext"
         android:drawableStart="@drawable/icon_clock2"
         android:drawablePadding="10dp"
         android:hint="DeliveryTime"

@@ -129,7 +129,7 @@
                                 android:paddingStart="10dp"
                                 android:text="MobileNumber"
                                 android:gravity="center_vertical"
-                                style="@style/eidttext2"
+                                style="@style/eidttext"
                                 android:textSize="@dimen/buttonText_xhdpi"
                                 android:textAlignment="textStart"/>
                         </LinearLayout>
@@ -159,7 +159,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="@dimen/buttonHeight_xhdpi"
                                 android:layout_marginStart="5dp"
-                                style="@style/eidttext2"
+                                style="@style/eidttext"
                                 android:paddingStart="10dp"
                                 android:layout_marginEnd="15dp"
                                 android:text="DeliveryFee"
@@ -193,7 +193,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
                                 android:layout_marginStart="5dp"
-                                style="@style/eidttext2"
+                                style="@style/eidttext"
                                 android:paddingStart="10dp"
                                 android:layout_marginEnd="15dp"
                                 android:gravity="center_vertical"

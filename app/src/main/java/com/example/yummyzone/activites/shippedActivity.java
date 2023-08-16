@@ -72,10 +72,10 @@ public class shippedActivity extends AppCompatActivity {
                         orderR.addValueEventListener(new ValueEventListener() {
                             @Override
                             public void onDataChange(@NonNull DataSnapshot snapshot) {
+                                p.setVisibility(View.GONE);
                                 shippedList.clear();
                                 for (DataSnapshot keyId : snapshot.getChildren()) {
                                     if (keyId.child("username").getValue().equals(username)){
-                                        p.setVisibility(View.GONE);
                                         if (keyId.getChildrenCount() > 0) {
 
                                             p.setVisibility(View.INVISIBLE);
