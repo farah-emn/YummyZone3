@@ -233,15 +233,13 @@ public class restaurant_eidtProfile_fragment extends Fragment {
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 Toast.makeText(view.getContext(), "add successfuly", Toast.LENGTH_SHORT).show();
+                restR.child(resName).child("restaurant_name").setValue(tv_restaurantName.getText().toString());
+                restR.child(resName).child("delivery_fee").setValue(tv_fee.getText().toString());
+                restR.child(resName).child("delivery_time").setValue(tv_time.getText().toString());
+                restR.child(resName).child("mobilenumber").setValue(tv_mobile.getText().toString());
                 if(imageUri !=null){
-                    Toast.makeText(view.getContext(), "mn", Toast.LENGTH_SHORT).show();
-                    restR.child(resName).child("restaurant_name").setValue(tv_restaurantName.getText());
-                    restR.child(resName).child("delivery_fee").setValue(tv_fee.getText());
-                    restR.child(resName).child("delivery_time").setValue(tv_time.getText());
-                    restR.child(resName).child("mobile number").setValue(tv_mobile.getText());
-                    restR.child(resName).child("logo").setValue(imageUri.toString());
+                         restR.child(resName).child("logo").setValue(imageUri.toString());
                 }
                 Iterator<Map.Entry<Integer, String>> iterator = hash_map.entrySet().iterator();
                 while (iterator.hasNext()) {
@@ -253,8 +251,10 @@ public class restaurant_eidtProfile_fragment extends Fragment {
                         if (string1.equals(value)){
                             Toast.makeText(view.getContext(), ""+value, Toast.LENGTH_SHORT).show();
                                 restR.child(resName).child("category"+value+"_"+"id").setValue(value);
-                        }}
-                }
+                        }}}
+                Fragment fragment = new restaurant_profileFragment();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.restaurant_main_fragment, fragment).commit();
+
 
 
 
