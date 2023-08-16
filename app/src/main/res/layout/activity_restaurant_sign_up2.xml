@@ -34,7 +34,7 @@
         android:id="@+id/restaurant_signup2_profile_img"
         android:layout_width="320dp"
         android:layout_height="150dp"
-        android:src="@drawable/image"
+        android:src="@drawable/empty_image"
         android:layout_marginTop="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
